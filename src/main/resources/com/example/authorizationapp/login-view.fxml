@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="487.0" prefWidth="732.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.authorizationapp.controllers.LoginController">
+    <children>
+        <TextField fx:id="loginLogin" layoutX="56.0" layoutY="219.0" prefHeight="25.0" prefWidth="370.0" promptText="Логин" />
+        <PasswordField fx:id="passwordLogin" layoutX="56.0" layoutY="282.0" prefHeight="25.0" prefWidth="370.0" promptText="Пароль" />
+        <Label layoutX="314.0" layoutY="48.0" text="Вход" textFill="WHITE">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Label>
+        <Button layoutX="56.0" layoutY="337.0" mnemonicParsing="false" onAction="#onLoginClick" prefHeight="36.0" prefWidth="136.0" text="Войти" />
+      <Label fx:id="noUser" layoutX="261.0" layoutY="337.0" prefHeight="36.0" prefWidth="210.0" text="Пользователь не найден" textFill="RED" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
